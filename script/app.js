@@ -2,8 +2,8 @@ function Game(){
     return{
         win: "Du vann!",
         loose: "OOOPS!",
-        // secretList: ["QUITO", "CANBERRA", "REYKJAVIK", "OTTAWA", "KINGSTON", "TBILISI", "SANAA", "ISLAMABAD","HELSINGFORS","WELLINGTON"],
-        secretList: ["FRANKRIKE", "SVERIGE", "NORGE", "FINLAND", "DANMARK", "TYSKLAND", "MEXIKO", "UGANDA", "INDIEN", "THAILAND"],
+        secretList: ["QUITO", "CANBERRA", "REYKJAVIK", "OTTAWA", "KINGSTON", "TBILISI", "SANAA", "ISLAMABAD","HELSINGFORS","WELLINGTON"],
+        // secretList: ["FRANKRIKE", "SVERIGE", "NORGE", "FINLAND", "DANMARK", "TYSKLAND", "MEXIKO", "UGANDA", "INDIEN", "THAILAND"],
         secret: "",
         guess:"",
         guessComplete: [],
@@ -16,7 +16,7 @@ function Game(){
             let guessValue = document.querySelector("#guess")
             temp=Math.floor(Math.random()*10)
             this.secret = this.secretList[temp];
-            console.log(this.secret)
+            // console.log(this.secret)
             this.drawBoxes(this.secret)
             guessBtn.addEventListener("click", event=>{
                 this.guess = "";
@@ -68,7 +68,7 @@ function Game(){
                 prev.appendChild(guessChar);
                 guessChar.innerText = this.guess;
                 this.counter += -1;
-                console.log(this.counter)
+                // console.log(this.counter)
                 this.drawHangingMan();
             }
         },
