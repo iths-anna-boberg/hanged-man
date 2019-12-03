@@ -1,2 +1,2 @@
 # hanged-man
-just a test
+2019-12-03: Started out with basic functionality of the classic game "Hänga gubbe"
