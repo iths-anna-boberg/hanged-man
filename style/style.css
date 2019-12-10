@@ -19,17 +19,38 @@ body{
     justify-content: center;
 }
 
+.btn{
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    margin: 0.8rem;
+}
+
+input{
+    margin-left: 0.8rem;
+}
+
 header{
-    background-image: linear-gradient(red, yellow);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    background-image: url(/img/planks.jpg);
 }
 
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 76px;
     text-align: center;
+}
+
+h1 span{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    padding: 0.8rem 1.6rem;
+    margin: 0.5rem;
+}
+
+h1 span:nth-of-type(5){
+    margin-right: 3rem;
 }
 
 input{
@@ -61,20 +82,24 @@ input{
 }
 
 .word-display{
-    margin: 5rem;
+    margin: 2rem;
     display: flex;
     justify-content: center;
 }
 
 .char{
-    background-color: lightyellow;
+    background-color: white;
     font-size: var(--font-default);
     padding: 1rem;
     margin: 0.5rem;
-    border: 1px solid yellow;
+    border: 1px solid black;
     width: 3rem;
     height: 3rem;
     text-align: center;
+}
+
+.guessing-area{
+    width: 40%;
 }
 
 .prev p{
